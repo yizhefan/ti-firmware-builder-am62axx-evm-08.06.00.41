@@ -1,0 +1,69 @@
+===========================================
+System parameters structure and values
+ for use case : 
+STILL CAPTURE, HIGH QUALITY
+===========================================
+===========================================
+Usecase structure and values
+ for use case : 
+STILL CAPTURE, HIGH QUALITY
+===========================================
+struct mctnf_cfg_dcc_descriptor_t = {
+    0,  // uint8 update
+    1,  // uint8 enable
+    0,  // uint8 blending_factor_q4
+    0,  // uint8 min_blend_q4
+    0,  // uint8 max_blend_q4
+    1,  // uint8 me_lambda_type
+    36,  // uint8 me_lambda_factor_q2
+    255,  // uint8 max_lambda_q2
+    200,  // uint16 sad_for_min_lambda
+    0,  // uint16 fix_wt_cur_q8
+    1,  // uint8 bias_zero_motion
+    8,  // uint8 static_mb_th_zero_mv
+    10,  // uint8 static_mb_th_non_zero_mv
+    5,  // uint8 blockiness_rem_factor
+    900,  // uint16 me_effectiveness_th
+    41,  // uint8 min_wt_cur_q8
+    250,  // uint16 sad_max_strength
+    0,  // uint16 reserved_param1
+    0,  // uint16 reserved_param2
+    0,  // uint16 reserved_param3
+}  // mctnf_cfg_dcc_descriptor_t
+===================================================================================
+Use cases : 0x2
+===================================================================================
+
+region region0 par_pak N 0:
+colortemperature : val=2 0..20000
+exposure : val=1 0..10000000
+gain : val=0 0..1024
+colortemperature : val=2 0..20000
+exposure : val=1 0..10000000
+gain : val=0 0..1024
+---- par packs ------------
+par pack (class) N 0
+===========================
+HEADER INFORMATION
+===========================
+camera_module_id: 0
+dcc_descriptor_id: 46
+algorithm_vendor_id: 1
+dcc_tuning_tool_version: 0
+dcc_profile_time_stamp: 0
+crc_checksum: E3ED4D50
+dcc_reserved_0: 110
+dcc_reserved_1: 0
+dcc_reserved_2: 0
+dcc_reserved_3: 0
+dcc_reserved_4: 0
+dcc_reserved_5: 0
+dcc_reserved_6: 0
+dcc_reserved_7: 0
+dcc_reserved_8: 0
+dcc_reserved_9: 0
+sz_comp_spec_gen_params: 0
+sz_uc_spec_gen_params: 0
+sz_x_dcc_descriptor: 27
+total_file_sz: 175
+===========================

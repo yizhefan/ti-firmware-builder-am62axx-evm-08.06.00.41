@@ -1,0 +1,14 @@
+Please rename ehe to exe, ddd to dll and place in one folder
+
+
+command line:
+dcc_gen_win_basic.exe <XML file name>
+generates DCC BIN file from XML
+====================
+dcc_gen_win_devel.exe <XML file name>
+generates DCC BIN, H file defining DCC structure, automatic C parser - to be used when DCC structure in XML and algorithm is changed (by developers only)
+
+====================
+dcc_gen_win_debug.exe <XML file name>
+searches BIN file in the same folder with name same as the XML
+generates TXT file with contents of the BIN

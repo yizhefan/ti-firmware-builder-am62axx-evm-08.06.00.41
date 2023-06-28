@@ -1,0 +1,19 @@
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:6: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:25: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:44: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:102: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:163: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:182: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:236: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:297: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_user_guide/openvx.tag:358: warning: Unexpected tag `anchor' found
+
+/ti/j7/workarea/vision_apps/utils/hwa/include/app_hwa.h:143: warning: unable to resolve reference to `SDE_DispSearchRange' for \ref command

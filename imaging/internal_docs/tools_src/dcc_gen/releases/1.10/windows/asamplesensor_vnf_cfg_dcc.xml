@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VNF_CFG_xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--this is comment-->
+  <dcc_name>vnf_cfg_dcc</dcc_name>
+  <dcc_header>
+    <camera_module_id>    42 </camera_module_id>
+	  <dcc_descriptor_id>   26 </dcc_descriptor_id>
+	  <algorithm_vendor_id>  1 </algorithm_vendor_id>
+	  <tunning_tool_version> 0 </tunning_tool_version>
+  </dcc_header>
+  <!--=======================================================================-->
+    <typedef>
+				<nsf_vnf_cfg_t type="struct">
+					<enable type="uint8"> </enable> <!-- disable/default/enable high iso noise filtering: 0,1,2 -->
+				  <y_en type="uint8"> </y_en> <!-- enable/disable luma processing: 0,1 -->
+				  <c_en type="uint8"> </c_en> <!-- enable/disable chroma processing: 0,1 -->				  
+				  <shd_en type="uint8"> </shd_en> <!-- disable/default/enable lens-shading radial gain compensation for noise filtering: 0,1,2 -->
+				  <sft_thr_luma_en type="uint8"> </sft_thr_luma_en> <!-- enable/disable noise filter soft-thresholding on lumna: 0,1 -->
+					<sft_thr_chroma_en type="uint8"> </sft_thr_chroma_en> <!-- enable/diable noise filter soft-thresholding on chroma: 0,1 -->
+          <nsf_soft_slope type="uint8"> </nsf_soft_slope>
+				  <ee_en type="uint8"> </ee_en> <!-- disable/default/enable edge enhancement: 0,1,2 -->
+				  <ds_en type="uint8"> </ds_en> <!-- disable/default/enable desaturation adjustment: 0,1,2 -->
+				  <thr_val type="int16[18]"> </thr_val> <!-- offsets and slopes for color and level config -->
+				  <shd_val type="int16[16]"> </shd_val> <!-- radial shading gain approximation config -->
+				  <edge_val type="int16[12]"> </edge_val> <!-- edge enhancement config -->
+				  <desat_val type="int16[4]"> </desat_val> <!-- desaturation adjustment config -->
+        </nsf_vnf_cfg_t>
+        <ldc_vnf_cfg_t type="struct">
+          <bayer_format type="uint8"> </bayer_format>
+          <PixelPad     type="uint16">  </PixelPad>
+          <ld_yint_typ type="uint8"> </ld_yint_typ> <!--eInterpolationLuma-->
+          <affine_a    type="uint16"> </affine_a>
+          <affine_b    type="uint16"> </affine_b>
+          <affine_c    type="uint16"> </affine_c>
+          <affine_d    type="uint16"> </affine_d>
+          <affine_e    type="uint16"> </affine_e>
+          <affine_f    type="uint16"> </affine_f>
+          <startX      type="uint16">  </startX>
+          <startY      type="uint16">  </startY>
+          <LensCentreY type="uint16"> </LensCentreY>
+          <LensCentreX type="uint16"> </LensCentreX>
+          <ld_rth      type="uint16"> </ld_rth>
+          <ld_t        type="uint16"> </ld_t>
+          <ld_kvL      type="uint8"> </ld_kvL>
+          <ld_kvU      type="uint8"> </ld_kvU>
+          <ld_khR      type="uint8"> </ld_khR>
+          <ld_khL      type="uint8"> </ld_khL>
+          <ld_lut      type="uint16[256]"> </ld_lut>
+        </ldc_vnf_cfg_t>
+		<tnf_vnf_cfg_t type="struct">
+		  <y_component_weight type="uint16"> </y_component_weight> <!-- y component weight for motion computation: Q4 -->
+		  <u_component_weight type="uint16"> </u_component_weight> <!-- u component weight for motion computation: Q4 -->
+		  <v_component_weight type="uint16"> </v_component_weight> <!-- v component weight for motion computation: Q4 -->
+		  <max_blending_factor type="uint16"> </max_blending_factor> <!-- max blending factor to generate temportal noise filter LUT: U9 -->
+		  <motion_threshold type="uint16"> </motion_threshold> <!-- max allowed motion threshold: if exceeds, temporal filter outputs current frame: U6 -->
+		</tnf_vnf_cfg_t>
+		<tnf2_vnf_cfg_t type="struct">
+		  <blending_look_up_table type="int16[32]"> </blending_look_up_table> <!-- LUT for alpha blending Q8 -->
+		  <thr_half_quad   type="int16[12]"> </thr_half_quad> <!-- offsets and slopes for half size and Quad size NSF2 -->
+          <diff_scale type="uint16"> </diff_scale> <!-- scaling factor for difference image -->
+          <diff_shift type="uint16"> </diff_shift> <!-- Shift value for filtred diff image -->
+		  </tnf2_vnf_cfg_t>
+      
+		<tnf3_vnf_cfg_t type="struct">
+          <unStrengthOfTNF3 type="uint16"> </unStrengthOfTNF3> <!-- TNF3 strength -->
+          <eTnf3Preset      type="uint16"> </eTnf3Preset> <!-- TNF3 preset -->
+          <tnf3TS           type="uint16"> </tnf3TS> <!-- threshold for NSF in TNF3 flow -->
+		  </tnf3_vnf_cfg_t>
+
+      <vnf_cfg_dcc_descriptor_t type="struct">
+			<op_mode type="uint8"> </op_mode><!-- operation mode (0,1,2) : LDC+Affine+NSF+TNF / Affine+NSF+TNF / TNF only -->
+			<nsf_cfg type="nsf_vnf_cfg_t"> </nsf_cfg> <!-- configure nsf for vnf -->
+		  <ldc_cfg type="ldc_vnf_cfg_t"> </ldc_cfg> <!-- configure ldc for vnf -->
+		  <tnf_cfg type="tnf_vnf_cfg_t"> </tnf_cfg> <!-- configure tnf for vnf -->
+		  <tnf2_cfg type="tnf2_vnf_cfg_t"> </tnf2_cfg> <!-- configure tnf2 for vnf -->
+      <tnf3_cfg type="tnf3_vnf_cfg_t"> </tnf3_cfg> <!-- configure tnf2 for vnf -->
+		</vnf_cfg_dcc_descriptor_t>
+    </typedef>
+  <!--=======================================================================-->
+  
+  <use_case val="1023">
+    <n-space>
+      
+      <region0 class="0">
+        	<colortemperature val="2" min="0" max="20000">  </colortemperature>
+        	<exposure val="1" min="0" max="10000000">  </exposure>
+        	<gain val="0" min="0" max="1024">  </gain>
+        
+      </region0>
+      
+    </n-space>
+    
+    <parameter_package>
+      <vnf_cfg_dcc type="vnf_cfg_dcc_descriptor_t">
+              {
+                6, // op_mode
+                
+                { // nsf_cfg
+                  2, // enable
+                  1, // y_en
+                  1, // c_en
+                  0, // shd_en
+                  0, // sft_thr_luma_en
+                  0, // sft_thr_chroma_en
+                  1, // nsf_soft_slope
+                  0, // ee_en
+                  0, // ds_en
+                  { //thr_val
+                     0,		//Luminance High Frequency
+                     0,		//Luminance High Frequency Slope
+                     0,		//Luminance Mid Frequency
+                     0,		//Luminance Mid Frequency Slope
+                     0,		//Luminance Low Frequency
+                     0,		//Luminance Low Frequency Slope
+                     10,		//Chroma High Frequency
+                     0,		//Chroma High Frequency Slope
+                     10,		//Chroma Mid Frequency
+                     0,		//Chroma Mid Frequency Slope
+                     10,		//Chroma Low Frequency
+                     0,		//Chroma Low Frequency Slope
+                     10,		//V High Frequency
+                     0,		//V High Frequency Slope
+                     10,		//V Mid Frequency
+                     0,		//V Mid Frequency Slope
+                     10,		//V Low Frequency
+                     0,		//V Low Frequency Slope
+                     
+                  },
+                  
+                  { //shd_val
+                     0,		//Initial X Coordinate
+                     0,		//Initial Y Coordinate
+                     -3289,		//X Term Coefficient H, fixed point int
+                     2076,		//X^2 Term Coefficient H, fixed point int
+                     -2611,		//X Term Coefficient V, fixed point int
+                     2225,		//X^2 Term Coefficient V, fixed point int
+                     1,		//Shift Select for Horizontal Component
+                     10,		//X^2 Term Coefficient H, radix point pos
+                     12,		//X Term Coefficient H, radix point pos
+                     9,		//Gain Adjust, radix point pos
+                     1,		//Shift Select for Vertical Component
+                     10,		//X^2 Term Coefficient V, radix point pos
+                     12,		//X Term Coefficient V, radix point pos
+                     32,		//Gain Adjust
+                     66,		//Offset Adjust
+                     256,		//Max Gain
+                     
+                  },
+                  
+                  { //edge_val
+                     2,		//Strength (High Freq)
+                     20,		//Weak Edge Threshold (High Freq)
+                     150,		//Strong Edge Threshold (High Freq)
+                     280,		//Offset (High Freq)
+                     3,		//Strength (Medium Freq)
+                     20,		//Weak Edge Threshold (Medium Freq)
+                     150,		//Strong Edge Threshold (Medium Freq)
+                     410,		//Offset (Medium Freq)
+                     1,		//Strength (Low Freq)
+                     20,		//Weak Edge Threshold (Low Freq)
+                     200,		//Strong Edge Threshold (Low Freq)
+                     200,		//Offset (Low Freq)
+                     
+                  },
+                  
+                  { //desat_val
+                     8,		//Threshold 1
+                     16,		//Threshold 2
+                     32,		//Slope 1
+                     96,		//Slope 2
+                     
+                  }
+                },
+                
+                { // ldc_cfg
+                  0, //0, // bayer_format
+                  8, //6, //PixelPad
+                  0, //1, // ld_yint_typ
+                  4096, //4096, // affine_a
+                  0, //0, // affine_b
+                  0, //0, // affine_c
+                  0, //0, // affine_d
+                  4096, //4096, // affine_e
+                  0, //0, // affine_f
+                  0, // startX
+                  0, // startY
+                  540, // LensCentreY
+                  960, // LensCentreX
+                  0, // ld_rth
+                  15, // ld_t
+                  2, // ld_kvL
+                  2, // ld_kvU
+                  2, // ld_khR
+                  0, // ld_khL
+                  { // ld_lut
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     8192,
+                     
+                  }
+                },
+                { // tnf_cfg
+                  16, // y_component_weight
+                  0, // u_component_weight
+                  16, // v_component_weight
+                  235, // max_blending_factor
+                  15  // motion_threshold
+                }
+                { // tnf2_cfg
+                  {
+					                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     128,
+                     92,
+                     61,
+                     31,
+                     20,
+                     10,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     
+				  },
+				  {
+					                     64,
+                     0,
+                     32,
+                     0,
+                     16,
+                     0,
+                     14,
+                     0,
+                     7,
+                     0,
+                     4,
+                     0,
+                     
+				  },
+				  2,
+				  2
+                }
+                {//tnf3_cfg
+                  0,
+                  2,
+                  5
+                }
+              }
+      </vnf_cfg_dcc>
+    </parameter_package>
+    
+  </use_case>
+  
+  <!--=======================================================================-->
+</VNF_CFG_xml>
+

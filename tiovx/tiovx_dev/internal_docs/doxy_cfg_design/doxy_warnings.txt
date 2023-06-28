@@ -1,0 +1,95 @@
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/02000_top_level_design.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/03000_platform_layer.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/04000_streaming.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/05000_raw_image.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/06000_capture.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/07000_multi_process.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/08000_csitx.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/09000_encoder_node.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/10000_capture_robustness.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/11000_capture_timestamp.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/12000_multi_process_buffer_exchange.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/99999_design_topic_template.md:1: warning: multiple use of section label 'Revision History', (first occurrence: /ti/j7presi/workarea/tiovx/tiovx_dev/internal_docs/doxy_cfg_design/content_pages/01000_introduction.md, line 1)
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:312: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:327: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:328: warning: unable to resolve reference to `TIVX_DEFAULT_KERNAL_TIMEOUT' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:317: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:318: warning: unable to resolve reference to `TIVX_DEFAULT_KERNAL_TIMEOUT' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:347: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:139: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:145: warning: unable to resolve reference to `vx_bool' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:143: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:151: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:149: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:141: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:221: warning: explicit link request to 'g_ipc_cpu_id_map' could not be resolved
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:312: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:317: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:318: warning: unable to resolve reference to `TIVX_DEFAULT_KERNAL_TIMEOUT' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:327: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:328: warning: unable to resolve reference to `TIVX_DEFAULT_KERNAL_TIMEOUT' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:336: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:337: warning: unable to resolve reference to `TIVX_DEFAULT_GRAPH_TIMEOUT' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:347: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:355: warning: unable to resolve reference to `vx_df_image' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:527: warning: Unsupported xml/html tag <output> found
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:527: warning: Unsupported xml/html tag <jpg> found
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:527: warning: Unsupported xml/html tag <text> found
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:553: warning: unable to resolve reference to `vx_node' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:554: warning: unable to resolve reference to `vxGetStatus' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:571: warning: unable to resolve reference to `vx_node' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:572: warning: unable to resolve reference to `vxGetStatus' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:589: warning: unable to resolve reference to `vx_node' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:590: warning: unable to resolve reference to `vxGetStatus' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:604: warning: unable to resolve reference to `vx_bool' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:627: warning: unable to resolve reference to `vx_bool' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:692: warning: argument 'Size' of command @param is not found in the argument list of tivxGetNodeParameterNumBufByIndex(vx_node node, vx_uint32 index, void *num_buf, vx_size size)
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:713: warning: The following parameters of tivxGetNodeParameterNumBufByIndex(vx_node node, vx_uint32 index, void *num_buf, vx_size size) are not documented:
+  parameter 'size'
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:741: warning: unable to resolve reference to `vxGraphParameterEnqueueReadyRef' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:749: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:862: warning: unable to resolve reference to `vx_user_data_object_attribute_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:866: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:868: warning: unable to resolve reference to `vx_user_data_object' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:878: warning: unable to resolve reference to `vx_node' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:882: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:894: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:910: warning: unable to resolve reference to `_vx_bool_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:939: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx.h:973: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:244: warning: unable to resolve reference to `vx_memory_type_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:245: warning: unable to resolve reference to `vx_accessor_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:257: warning: unable to resolve reference to `VX_WRITE_ONLY' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:258: warning: unable to resolve reference to `VX_READ_AND_WRITE' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:262: warning: unable to resolve reference to `vx_memory_type_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:263: warning: unable to resolve reference to `vx_accessor_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:352: warning: argument 'virt_addr' of command @param is not found in the argument list of tivxMemTranslateVirtAddr(const void *virtAddr, uint64_t *fd, void **phyAddr)
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:352: warning: argument 'phys_addr' of command @param is not found in the argument list of tivxMemTranslateVirtAddr(const void *virtAddr, uint64_t *fd, void **phyAddr)
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:369: warning: The following parameters of tivxMemTranslateVirtAddr(const void *virtAddr, uint64_t *fd, void **phyAddr) are not documented:
+  parameter 'virtAddr'
+  parameter 'phyAddr'
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:372: warning: argument 'virt_addr' of command @param is not found in the argument list of tivxMemTranslateFd(uint64_t dmaBufFd, uint32_t size, void **virtAddr, void **phyAddr)
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:372: warning: argument 'phys_addr' of command @param is not found in the argument list of tivxMemTranslateFd(uint64_t dmaBufFd, uint32_t size, void **virtAddr, void **phyAddr)
+/ti/j7presi/workarea/tiovx/include/TI/tivx_mem.h:391: warning: The following parameters of tivxMemTranslateFd(uint64_t dmaBufFd, uint32_t size, void **virtAddr, void **phyAddr) are not documented:
+  parameter 'virtAddr'
+  parameter 'phyAddr'
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:139: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:141: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:143: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:145: warning: unable to resolve reference to `vx_bool' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:149: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:151: warning: unable to resolve reference to `vx_uint32' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:183: warning: unable to resolve reference to `vx_graph' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:189: warning: unable to resolve reference to `vxGetStatus' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:199: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:215: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:251: warning: unable to resolve reference to `vx_accessor_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:254: warning: unable to resolve reference to `vx_memory_type_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:259: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:298: warning: unable to resolve reference to `tivxCreateRawImageFromHandle' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:300: warning: unable to resolve reference to `tivxCreateRawImageFromHandle' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:306: warning: unable to resolve reference to `tivxCreateRawImageFromHandle' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:310: warning: unable to resolve reference to `vx_accessor_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:326: warning: unable to resolve reference to `vx_memory_type_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:331: warning: unable to resolve reference to `vx_status_e' for \ref command
+/ti/j7presi/workarea/tiovx/include/TI/tivx_ext_raw_image.h:361: warning: unable to resolve reference to `vx_status_e' for \ref command

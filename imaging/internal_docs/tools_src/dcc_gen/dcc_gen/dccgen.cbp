@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dccgen" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="all">
+				<Option output="bin/dccgen" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../debug" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="sony12m_ducati_lsc_interp_base_table.xml" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../lib" />
+				</Compiler>
+			</Target>
+			<Target title="test">
+				<Option output="bin/dccgen" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../debug" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="sony12m_ducati_cfa.xml" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../lib" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-D__LINUX__" />
+			<Add directory="../inc" />
+		</Compiler>
+		<Linker>
+			<Add library="../lib/libexpat.so" />
+		</Linker>
+		<Unit filename="../Makefile" />
+		<Unit filename="../inc/ctypes.h" />
+		<Unit filename="../inc/dcc_defs.h" />
+		<Unit filename="../inc/expat.h" />
+		<Unit filename="../inc/expat_external.h" />
+		<Unit filename="../inc/private.h" />
+		<Unit filename="../inc/tools.h" />
+		<Unit filename="../inc/write_dtp.h" />
+		<Unit filename="../src/dcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/dcc_header.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/general_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/tools.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/typedef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/usecase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/write_dtp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/write_header.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/write_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1">
+				<lib name="xpat" />
+			</lib_finder>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

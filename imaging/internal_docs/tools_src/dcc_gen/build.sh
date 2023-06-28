@@ -1,0 +1,1 @@
+gcc -g -D__LINUX__ -Iinc -O0 -m32 -Wall -static src/dcc.c lib/libexpat.a src/dcc_header.c src/general_data.c src/tools.c src/typedef.c src/usecase.c src/write_dtp.c src/write_header.c src/write_parser.c -o ../../../tools/dcc_tools/dcc_gen_linux

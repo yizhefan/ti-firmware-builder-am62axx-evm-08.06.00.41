@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MCTNF_CONFIG_xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--this is comment-->
+  <dcc_name>mctnf_config_dcc</dcc_name>
+  <dcc_header>
+    <camera_module_id>     0 </camera_module_id>
+	  <dcc_descriptor_id>   46 </dcc_descriptor_id>
+	  <algorithm_vendor_id>  1 </algorithm_vendor_id>
+	  <tunning_tool_version> 0 </tunning_tool_version>
+  </dcc_header>
+  <!--=======================================================================-->
+    <typedef>
+		<mctnf_cfg_dcc_descriptor_t type="struct">
+		  <update type="uint8"> </update>
+		  <enable type="uint8"> </enable> <!-- enable/disable mctnf -->
+		  <blending_factor_q4		type="uint8">  </blending_factor_q4>
+		  <min_blend_q4			type="uint8">  </min_blend_q4>
+		  <max_blend_q4			type="uint8">  </max_blend_q4>
+		  <me_lambda_type			type="uint8">  </me_lambda_type>
+		  <me_lambda_factor_q2		type="uint8">  </me_lambda_factor_q2>
+		  <max_lambda_q2			type="uint8">  </max_lambda_q2>
+		  <sad_for_min_lambda		type="uint16">  </sad_for_min_lambda>
+		  <fix_wt_cur_q8			type="uint16">  </fix_wt_cur_q8>
+		  <bias_zero_motion		type="uint8">  </bias_zero_motion>
+		  <static_mb_th_zero_mv		type="uint8">  </static_mb_th_zero_mv>
+		  <static_mb_th_non_zero_mv 	type="uint8">  </static_mb_th_non_zero_mv>
+		  <blockiness_rem_factor	type="uint8">  </blockiness_rem_factor>
+		  <me_effectiveness_th	type="uint16">  </me_effectiveness_th>
+		  <min_wt_cur_q8			type="uint8">  </min_wt_cur_q8>
+		  <sad_max_strength		type="uint16">  </sad_max_strength>
+		  <reserved_param1		type="uint16">  </reserved_param1>
+		  <reserved_param2		type="uint16">  </reserved_param2>
+		  <reserved_param3		type="uint16">  </reserved_param3>
+		</mctnf_cfg_dcc_descriptor_t>
+
+    </typedef>    
+  <!--=======================================================================-->
+    <use_case val="2">
+        <n-space>
+		
+            <region0 class="0">
+				<colortemperature val="2" min="0" max="20000">  </colortemperature>
+				<exposure val="1" min="0" max="10000000">  </exposure>
+				<gain val="0" min="0" max="1024">  </gain>
+			</region0>
+		
+		</n-space>
+
+       <parameter_package>           
+             <mctnf_config_dcc type="mctnf_cfg_dcc_descriptor_t">
+			 {
+
+				  // mctnf_parameters
+				
+					0, //update
+
+					1, // enable
+
+					0, // blending_factor_q4
+
+					0,  // min_blend_q4
+
+					0, // max_blend_q4
+
+					1,  // me_lambda_type
+
+					36, // me_lambda_factor_q2
+
+					255,  // max_lambda_q2
+
+					200, // sad_for_min_lambda
+					
+					0,  // fix_wt_cur_q8
+					
+					1,  // bias_zero_motion
+					
+					8,  // static_mb_th_zero_mv
+					
+					10,  // static_mb_th_non_zero_mv
+					
+					5,  // blockiness_rem_factor
+					
+					900,  // me_effectiveness_th
+					
+					41,  // min_wt_cur_q8
+					
+					250,  // sad_max_strength
+					
+					0,  // reserved_param1
+					
+					0,  // reserved_param2
+					
+					0,  // reserved_param3
+					
+				
+
+			}
+
+			 </mctnf_config_dcc>
+        </parameter_package>
+		
+    </use_case>
+	
+  <!--=====================================================================-->
+</MCTNF_CONFIG_xml>

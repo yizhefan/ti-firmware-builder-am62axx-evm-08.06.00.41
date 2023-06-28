@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="test" />
+	<File name="../Makefile" open="0" top="0" tabpos="7">
+		<Cursor position="96" topLine="0" />
+	</File>
+	<File name="../inc/private.h" open="1" top="0" tabpos="3">
+		<Cursor position="173" topLine="0" />
+	</File>
+	<File name="../inc/tools.h" open="0" top="0" tabpos="9">
+		<Cursor position="9560" topLine="233" />
+	</File>
+	<File name="../inc/write_dtp.h" open="1" top="0" tabpos="2">
+		<Cursor position="2140" topLine="42" />
+	</File>
+	<File name="../src/dcc.c" open="0" top="0" tabpos="4">
+		<Cursor position="23945" topLine="734" />
+	</File>
+	<File name="../src/tools.c" open="1" top="0" tabpos="4">
+		<Cursor position="81670" topLine="2925" />
+	</File>
+	<File name="../src/typedef.c" open="0" top="0" tabpos="5">
+		<Cursor position="6145" topLine="120" />
+	</File>
+	<File name="../src/write_dtp.c" open="1" top="0" tabpos="1">
+		<Cursor position="35540" topLine="1009" />
+	</File>
+	<File name="../src/write_header.c" open="1" top="0" tabpos="6">
+		<Cursor position="10176" topLine="309" />
+	</File>
+	<File name="../src/write_parser.c" open="1" top="1" tabpos="5">
+		<Cursor position="15230" topLine="426" />
+	</File>
+</CodeBlocks_layout_file>

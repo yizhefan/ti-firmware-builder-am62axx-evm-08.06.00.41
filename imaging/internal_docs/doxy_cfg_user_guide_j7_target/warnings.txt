@@ -1,0 +1,76 @@
+warning: Tag `SYMBOL_CACHE_SIZE' at line 296 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag `SHOW_DIRECTORIES' at line 484 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag `HTML_ALIGN_MEMBERS' at line 813 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag `USE_INLINE_TREES' at line 966 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag `XML_SCHEMA' at line 1159 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag `XML_DTD' at line 1165 of file `user_guide_j7evm.cfg' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+error: the type 'dirs' is not supported for the entry tag within a navindex! Check your layout file!
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:7: warning: group group_vision_function_imaging: ignoring title "TI Imaging Kernel APIs" that does not match old title "Imaging Interface Modules"
+
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:36: warning: group group_vision_function_imaging_sensordrv: ignoring title "TI Imaging Kernel APIs" that does not match old title "Imaging Sensor Driver Modules"
+
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:7: warning: Refusing to add group group_vision_function_imaging to itself
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:36: warning: Refusing to add group group_vision_function_imaging_sensordrv to itself
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_ar0233.h:62: warning: the name `dcc_2a_ar0233_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_ar0233_wdr.h:62: warning: the name `dcc_2a_ar0233_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_ar0820.h:62: warning: the name `dcc_2a_ar0820_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_ar0820_wdr.h:62: warning: the name `dcc_2a_ar0820_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_imx390.h:62: warning: the name `dcc_2a_imx390_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_2a_imx390_wdr.h:62: warning: the name `dcc_2a_imx390_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_ar0233.h:62: warning: the name `dcc_ldc_ar0233_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_ar0233_wdr.h:62: warning: the name `dcc_ldc_ar0233_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_ar0820.h:62: warning: the name `dcc_ldc_ar0820_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_ar0820_wdr.h:62: warning: the name `dcc_ldc_ar0820_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_imx390.h:62: warning: the name `dcc_ldc_imx390_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_ldc_imx390_wdr.h:62: warning: the name `dcc_ldc_imx390_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_ar0233.h:62: warning: the name `dcc_viss_ar0233_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_ar0233_wdr.h:62: warning: the name `dcc_viss_ar0233_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_ar0820.h:62: warning: the name `dcc_viss_ar0820_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_ar0820_wdr.h:62: warning: the name `dcc_viss_ar0820_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_imx390.h:62: warning: the name `dcc_viss_imx390_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/dcc_viss_imx390_wdr.h:62: warning: the name `dcc_viss_imx390_wdr_dcc.h' supplied as the second argument in the \file statement is not an input file
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:98: warning: unable to resolve reference to `vxGetKernelByName' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:100: warning: unable to resolve reference to `VX_INPUT' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:101: warning: unable to resolve reference to `VX_OUTPUT' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:102: warning: unable to resolve reference to `VX_BIDIRECTIONAL' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:105: warning: unable to resolve reference to `VX_TYPE_IMAGE' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:105: warning: unable to resolve reference to `vx_image' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:105: warning: unable to resolve reference to `vxGetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:105: warning: unable to resolve reference to `vxSetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:106: warning: unable to resolve reference to `VX_TYPE_ARRAY' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:106: warning: unable to resolve reference to `vx_array' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:106: warning: unable to resolve reference to `vxGetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:106: warning: unable to resolve reference to `vxSetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_kernels_imaging_aewb.h:107: warning: unable to resolve reference to `vx_type_e' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:11: warning: unable to resolve reference to `vxGetKernelByName' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:13: warning: unable to resolve reference to `VX_INPUT' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:14: warning: unable to resolve reference to `VX_OUTPUT' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:15: warning: unable to resolve reference to `VX_BIDIRECTIONAL' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:18: warning: unable to resolve reference to `VX_TYPE_IMAGE' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:18: warning: unable to resolve reference to `vx_image' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:18: warning: unable to resolve reference to `vxGetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:18: warning: unable to resolve reference to `vxSetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:19: warning: unable to resolve reference to `VX_TYPE_ARRAY' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:19: warning: unable to resolve reference to `vx_array' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:19: warning: unable to resolve reference to `vxGetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:19: warning: unable to resolve reference to `vxSetParameterByIndex' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/internal_docs/doxy_cfg_user_guide_j7_target/content_pages/modules.h:20: warning: unable to resolve reference to `vx_type_e' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_nodes_imaging_aewb.h:81: warning: unable to resolve reference to `vx_node' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/kernels/include/TI/j7_nodes_imaging_aewb.h:82: warning: unable to resolve reference to `vxGetStatus' for \ref command
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:562: warning: argument 'registeredSensorNames' of command @param is not found in the argument list of IssSensor_Init()
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:633: warning: argument 'dccId' of command @param is not found in the argument list of IssSensor_GetSensorHandle(char *name)
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:633: warning: argument 'pInfo' of command @param is not found in the argument list of IssSensor_GetSensorHandle(char *name)
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:648: warning: The following parameters of IssSensor_GetSensorHandle(char *name) are not documented:
+  parameter 'name'
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:653: warning: argument 'pCreatePrms' of command @param is not found in the argument list of IssSensor_Create(char *name)
+/mnt/x/mayank/j7/workarea/imaging/sensor_drv/include/iss_sensors.h:668: warning: The following parameters of IssSensor_Create(char *name) are not documented:
+  parameter 'name'

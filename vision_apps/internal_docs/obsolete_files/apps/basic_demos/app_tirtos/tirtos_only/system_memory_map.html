@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+.tg .tg-kftd{background-color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-6sgx{background-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-fjir{background-color:#343434;color:#ffffff;text-align:left;vertical-align:top}
+</style>
+
+    <head>
+        <title>System Memory Map for RTOS only mode</title>
+    </head>
+    <body>
+        <h1>System Memory Map for RTOS only mode</h1>
+        <p>Note, this file is auto generated using PyTI_PSDK_RTOS tool</p>
+        <table class="tg">
+            <tr>
+                <th class="tg-fjir">Name</th>
+                <th class="tg-fjir">Start Addr</th>
+                <th class="tg-fjir">End Addr</th>
+                <th class="tg-fjir">Size </th>
+                <th class="tg-fjir">Attributes</th>
+                <th class="tg-fjir">Description</th>
+            </tr>
+            <tr>
+                <td class="tg-kftd">L2RAM_C7x_1</td>
+                <td class="tg-kftd">0x64800000</td>
+                <td class="tg-kftd">0x6486FFFF</td>
+                <td class="tg-kftd">448.00 KB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">L2 for C7x_1</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">L1RAM_C7x_1</td>
+                <td class="tg-6sgx">0x64E00000</td>
+                <td class="tg-6sgx">0x64E03FFF</td>
+                <td class="tg-6sgx">16.00 KB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">L1 for C7x_1</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">MSMC_MPU1</td>
+                <td class="tg-kftd">0x70000000</td>
+                <td class="tg-kftd">0x7000FFFF</td>
+                <td class="tg-kftd">64.00 KB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">MSMC for MPU1</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">MSMC_C7x_1</td>
+                <td class="tg-6sgx">0x70010000</td>
+                <td class="tg-6sgx">0x707EFFFF</td>
+                <td class="tg-6sgx"> 7.88 MB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">MSMC for C7x_1</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_MPU1</td>
+                <td class="tg-kftd">0x80000000</td>
+                <td class="tg-kftd">0x89FFFFFF</td>
+                <td class="tg-kftd">160.00 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for MPU1   for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">DDR_C66x_1</td>
+                <td class="tg-6sgx">0x8A000000</td>
+                <td class="tg-6sgx">0x8DFFFFFF</td>
+                <td class="tg-6sgx">64.00 MB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">DDR for C66x_1 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_C66x_2</td>
+                <td class="tg-kftd">0x8E000000</td>
+                <td class="tg-kftd">0x8EFFFFFF</td>
+                <td class="tg-kftd">16.00 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for C66x_2 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">DDR_C7x_1_BOOT</td>
+                <td class="tg-6sgx">0x8F000000</td>
+                <td class="tg-6sgx">0x8F00FFFF</td>
+                <td class="tg-6sgx">64.00 KB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">DDR for C7x_1  for boot code</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_C7x_1</td>
+                <td class="tg-kftd">0x8F010000</td>
+                <td class="tg-kftd">0x96FFFFFF</td>
+                <td class="tg-kftd">127.94 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for C7x_1  for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">DDR_MCU1_0</td>
+                <td class="tg-6sgx">0x97000000</td>
+                <td class="tg-6sgx">0x97FFFFFF</td>
+                <td class="tg-6sgx">16.00 MB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">DDR for MCU1_0 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_MCU1_1</td>
+                <td class="tg-kftd">0x98000000</td>
+                <td class="tg-kftd">0x98FFFFFF</td>
+                <td class="tg-kftd">16.00 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for MCU1_1 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">DDR_MCU2_0</td>
+                <td class="tg-6sgx">0x99000000</td>
+                <td class="tg-6sgx">0x9AFFFFFF</td>
+                <td class="tg-6sgx">32.00 MB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">DDR for MCU2_0 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_MCU2_1</td>
+                <td class="tg-kftd">0x9B000000</td>
+                <td class="tg-kftd">0x9EFFFFFF</td>
+                <td class="tg-kftd">64.00 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for MCU2_1 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">DDR_MCU3_0</td>
+                <td class="tg-6sgx">0x9F000000</td>
+                <td class="tg-6sgx">0xA0FFFFFF</td>
+                <td class="tg-6sgx">32.00 MB</td>
+                <td class="tg-6sgx">RWIX</td>
+                <td class="tg-6sgx">DDR for MCU3_0 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_MCU3_1</td>
+                <td class="tg-kftd">0xA1000000</td>
+                <td class="tg-kftd">0xA2FFFFFF</td>
+                <td class="tg-kftd">32.00 MB</td>
+                <td class="tg-kftd">RWIX</td>
+                <td class="tg-kftd">DDR for MCU3_1 for code/data</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">APP_LOG_MEM</td>
+                <td class="tg-6sgx">0xA3000000</td>
+                <td class="tg-6sgx">0xA303FFFF</td>
+                <td class="tg-6sgx">256.00 KB</td>
+                <td class="tg-6sgx"></td>
+                <td class="tg-6sgx">Memory for remote core logging</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">TIOVX_OBJ_DESC_MEM</td>
+                <td class="tg-kftd">0xA3040000</td>
+                <td class="tg-kftd">0xA4FFFFFF</td>
+                <td class="tg-kftd">31.75 MB</td>
+                <td class="tg-kftd"></td>
+                <td class="tg-kftd">Memory for TI OpenVX shared memory. MUST be non-cached or cache-coherent</td>
+            </tr>
+            <tr>
+                <td class="tg-6sgx">IPC_VRING_MEM</td>
+                <td class="tg-6sgx">0xA5000000</td>
+                <td class="tg-6sgx">0xA6FFFFFF</td>
+                <td class="tg-6sgx">32.00 MB</td>
+                <td class="tg-6sgx"></td>
+                <td class="tg-6sgx">Memory for IPC Vring's. MUST be non-cached or cache-coherent</td>
+            </tr>
+            <tr>
+                <td class="tg-kftd">DDR_SHARED_MEM</td>
+                <td class="tg-kftd">0xA7000000</td>
+                <td class="tg-kftd">0xBFFFFFFF</td>
+                <td class="tg-kftd">400.00 MB</td>
+                <td class="tg-kftd"></td>
+                <td class="tg-kftd">Memory for shared memory buffers in DDR</td>
+            </tr>
+        </table>
+    </body>
+</html>

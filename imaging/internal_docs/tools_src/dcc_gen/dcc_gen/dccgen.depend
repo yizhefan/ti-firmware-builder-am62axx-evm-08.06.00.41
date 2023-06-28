@@ -1,0 +1,884 @@
+# depslib dependency file v1.0
+1274343654 source:/home/markov/svn/DCC/dtp_gen/general_data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1267201708 /home/markov/svn/DCC/dtp_gen/ctypes.h
+
+1274345322 /home/markov/svn/DCC/dtp_gen/private.h
+	"ctypes.h"
+
+1274427224 /home/markov/svn/DCC/dtp_gen/tools.h
+	"private.h"
+	"ctypes.h"
+
+1269962672 /home/markov/svn/DCC/dtp_gen/lib/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1151999594 /home/markov/svn/DCC/dtp_gen/lib/expat_external.h
+
+1273736586 source:/home/markov/svn/DCC/dtp_gen/lib/xmlparse.c
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"ascii.h"
+	"expat.h"
+	"internal.h"
+	"xmltok.h"
+	"xmlrole.h"
+
+1140775884 /home/markov/svn/DCC/dtp_gen/lib/winconfig.h
+	<windows.h>
+	<memory.h>
+	<string.h>
+
+1067937086 /home/markov/svn/DCC/dtp_gen/lib/macconfig.h
+
+1181030272 /home/markov/svn/DCC/dtp_gen/lib/amigaconfig.h
+
+1154779302 /home/markov/svn/DCC/dtp_gen/lib/watcomconfig.h
+	<windows.h>
+
+1178699146 /home/markov/svn/DCC/dtp_gen/lib/ascii.h
+
+1164724104 /home/markov/svn/DCC/dtp_gen/lib/internal.h
+
+1134732362 /home/markov/svn/DCC/dtp_gen/lib/xmltok.h
+
+1076670136 /home/markov/svn/DCC/dtp_gen/lib/xmlrole.h
+	"xmltok.h"
+
+1155030640 source:/home/markov/svn/DCC/dtp_gen/lib/xmlrole.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmlrole.h"
+	"ascii.h"
+
+1164724104 source:/home/markov/svn/DCC/dtp_gen/lib/xmltok.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmltok.h"
+	"nametab.h"
+	"xmltok_impl.h"
+	"ascii.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"asciitab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_ns.c"
+	"xmltok_ns.c"
+
+969276382 /home/markov/svn/DCC/dtp_gen/lib/nametab.h
+
+969553218 /home/markov/svn/DCC/dtp_gen/lib/xmltok_impl.h
+	<stddef.h>
+
+1164724104 /home/markov/svn/DCC/dtp_gen/lib/xmltok_impl.c
+
+1025602966 /home/markov/svn/DCC/dtp_gen/lib/asciitab.h
+
+1025602966 /home/markov/svn/DCC/dtp_gen/lib/utf8tab.h
+
+1025602966 /home/markov/svn/DCC/dtp_gen/lib/iasciitab.h
+
+1025602966 /home/markov/svn/DCC/dtp_gen/lib/latin1tab.h
+
+1164724104 /home/markov/svn/DCC/dtp_gen/lib/xmltok_ns.c
+
+1164724104 source:/home/markov/svn/DCC/dtp_gen/lib/xmltok_impl.c
+
+1164724104 source:/home/markov/svn/DCC/dtp_gen/lib/xmltok_ns.c
+
+1274344692 source:/home/markov/svn/DCC/dtp_gen/outline.c
+	"ctypes.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"expat.h"
+	"tools.h"
+	"private.h"
+	<proto/expat.h>
+
+1274345621 source:/home/markov/svn/DCC/dtp_gen/tools.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1274345536 source:/home/markov/svn/DCC/dtp_gen/typedef.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1274346069 source:/home/markov/svn/DCC/dtp_gen/write_dtp_text.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1274345742 source:/home/markov/svn/DCC/dtp_gen/write_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1274426485 source:/home/markov/svn/DCC/dtp_gen/work/bbb.c
+	"../ctypes.h"
+	"bbb.h"
+
+1274428213 /home/markov/svn/DCC/dtp_gen/work/bbb.h
+	"../ctypes.h"
+
+1273560990 source:/home/markov/svn/DCC/dtp_gen/xml_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1274343693 source:/home/markov/svn/DCC/dtp_gen/dcc_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1274428193 source:/home/markov/svn/DCC/dtp_gen/usecase.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1274868986 source:/home/mms/Desktop/DCC/dtp_gen/dcc_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1267201708 /home/mms/Desktop/DCC/dtp_gen/ctypes.h
+
+1275296700 /home/mms/Desktop/DCC/dtp_gen/private.h
+	"ctypes.h"
+	"dcc_defs.h"
+
+1274338792 /home/mms/Desktop/DCC/dtp_gen/dcc_defs.h
+	"ctypes.h"
+
+1275305955 /home/mms/Desktop/DCC/dtp_gen/tools.h
+	"private.h"
+	"ctypes.h"
+
+1275295209 source:/home/mms/Desktop/DCC/dtp_gen/general_data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1269959072 /home/mms/Desktop/DCC/dtp_gen/lib/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1151995994 /home/mms/Desktop/DCC/dtp_gen/lib/expat_external.h
+
+1275389298 source:/home/mms/Desktop/DCC/dtp_gen/lib/xmlparse.c
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"ascii.h"
+	"expat.h"
+	"internal.h"
+	"xmltok.h"
+	"xmlrole.h"
+
+1275389033 /home/mms/Desktop/DCC/dtp_gen/lib/winconfig.h
+	<windows.h>
+	<memory.h>
+	<string.h>
+
+1275389125 /home/mms/Desktop/DCC/dtp_gen/lib/macconfig.h
+
+1275389072 /home/mms/Desktop/DCC/dtp_gen/lib/amigaconfig.h
+
+1275389068 /home/mms/Desktop/DCC/dtp_gen/lib/watcomconfig.h
+	<windows.h>
+
+1178695546 /home/mms/Desktop/DCC/dtp_gen/lib/ascii.h
+
+1164724104 /home/mms/Desktop/DCC/dtp_gen/lib/internal.h
+
+1134732362 /home/mms/Desktop/DCC/dtp_gen/lib/xmltok.h
+
+1076670136 /home/mms/Desktop/DCC/dtp_gen/lib/xmlrole.h
+	"xmltok.h"
+
+1155027040 source:/home/mms/Desktop/DCC/dtp_gen/lib/xmlrole.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmlrole.h"
+	"ascii.h"
+
+1164724104 source:/home/mms/Desktop/DCC/dtp_gen/lib/xmltok.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmltok.h"
+	"nametab.h"
+	"xmltok_impl.h"
+	"ascii.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"asciitab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_ns.c"
+	"xmltok_ns.c"
+
+969272782 /home/mms/Desktop/DCC/dtp_gen/lib/nametab.h
+
+969549618 /home/mms/Desktop/DCC/dtp_gen/lib/xmltok_impl.h
+	<stddef.h>
+
+1164724104 /home/mms/Desktop/DCC/dtp_gen/lib/xmltok_impl.c
+
+1025599366 /home/mms/Desktop/DCC/dtp_gen/lib/asciitab.h
+
+1025599366 /home/mms/Desktop/DCC/dtp_gen/lib/utf8tab.h
+
+1025599366 /home/mms/Desktop/DCC/dtp_gen/lib/iasciitab.h
+
+1025599366 /home/mms/Desktop/DCC/dtp_gen/lib/latin1tab.h
+
+1164724104 /home/mms/Desktop/DCC/dtp_gen/lib/xmltok_ns.c
+
+1164724104 source:/home/mms/Desktop/DCC/dtp_gen/lib/xmltok_impl.c
+
+1164724104 source:/home/mms/Desktop/DCC/dtp_gen/lib/xmltok_ns.c
+
+1275307083 source:/home/mms/Desktop/DCC/dtp_gen/outline.c
+	"ctypes.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"expat.h"
+	"tools.h"
+	"private.h"
+	<proto/expat.h>
+
+1275390344 source:/home/mms/Desktop/DCC/dtp_gen/tools.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1275297215 source:/home/mms/Desktop/DCC/dtp_gen/typedef.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1275294854 source:/home/mms/Desktop/DCC/dtp_gen/usecase.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1275389589 source:/home/mms/Desktop/DCC/dtp_gen/work/bbb.c
+	"../ctypes.h"
+	"bbb.h"
+
+1275390352 /home/mms/Desktop/DCC/dtp_gen/work/bbb.h
+	"../ctypes.h"
+
+1275386766 source:/home/mms/Desktop/DCC/dtp_gen/write_dtp_text.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1275386712 source:/home/mms/Desktop/DCC/dtp_gen/write_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1275388838 source:/home/mms/Desktop/DCC/dtp_gen/write_dtp_bin.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"write_dtp_bin.h"
+
+1275387690 /home/mms/Desktop/DCC/dtp_gen/write_dtp_bin.h
+
+1275489165 source:/home/x0129129/Desktop/DCC/dtp_gen/dcc_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1267201708 /home/x0129129/Desktop/DCC/dtp_gen/ctypes.h
+
+1276246841 /home/x0129129/Desktop/DCC/dtp_gen/private.h
+	"ctypes.h"
+	"dcc_defs.h"
+
+1275482245 /home/x0129129/Desktop/DCC/dtp_gen/dcc_defs.h
+	"ctypes.h"
+
+1276253926 /home/x0129129/Desktop/DCC/dtp_gen/tools.h
+	"private.h"
+	"ctypes.h"
+
+1276600752 source:/home/x0129129/Desktop/DCC/dtp_gen/general_data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1164595918 /home/x0129129/Desktop/DCC/dtp_gen/lib/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1149250656 /home/x0129129/Desktop/DCC/dtp_gen/lib/expat_external.h
+
+1276584632 source:/home/x0129129/Desktop/DCC/dtp_gen/lib/xmlparse.c
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"ascii.h"
+	"expat.h"
+	"internal.h"
+	"xmltok.h"
+	"xmlrole.h"
+
+1275389033 /home/x0129129/Desktop/DCC/dtp_gen/lib/winconfig.h
+	<windows.h>
+	<memory.h>
+	<string.h>
+
+1275389125 /home/x0129129/Desktop/DCC/dtp_gen/lib/macconfig.h
+
+1275389072 /home/x0129129/Desktop/DCC/dtp_gen/lib/amigaconfig.h
+
+1275389068 /home/x0129129/Desktop/DCC/dtp_gen/lib/watcomconfig.h
+	<windows.h>
+
+1178695546 /home/x0129129/Desktop/DCC/dtp_gen/lib/ascii.h
+
+1164724104 /home/x0129129/Desktop/DCC/dtp_gen/lib/internal.h
+
+1134732362 /home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok.h
+
+1076670136 /home/x0129129/Desktop/DCC/dtp_gen/lib/xmlrole.h
+	"xmltok.h"
+
+1155027040 source:/home/x0129129/Desktop/DCC/dtp_gen/lib/xmlrole.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmlrole.h"
+	"ascii.h"
+
+1164724104 source:/home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok.c
+	<stddef.h>
+	"winconfig.h"
+	"macconfig.h"
+	"amigaconfig.h"
+	"watcomconfig.h"
+	<expat_config.h>
+	"expat_external.h"
+	"internal.h"
+	"xmltok.h"
+	"nametab.h"
+	"xmltok_impl.h"
+	"ascii.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"iasciitab.h"
+	"utf8tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"asciitab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_impl.c"
+	"asciitab.h"
+	"latin1tab.h"
+	"asciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"iasciitab.h"
+	"latin1tab.h"
+	"xmltok_ns.c"
+	"xmltok_ns.c"
+
+969272782 /home/x0129129/Desktop/DCC/dtp_gen/lib/nametab.h
+
+969549618 /home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok_impl.h
+	<stddef.h>
+
+1164724104 /home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok_impl.c
+
+1025599366 /home/x0129129/Desktop/DCC/dtp_gen/lib/asciitab.h
+
+1025599366 /home/x0129129/Desktop/DCC/dtp_gen/lib/utf8tab.h
+
+1025599366 /home/x0129129/Desktop/DCC/dtp_gen/lib/iasciitab.h
+
+1025599366 /home/x0129129/Desktop/DCC/dtp_gen/lib/latin1tab.h
+
+1164724104 /home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok_ns.c
+
+1164724104 source:/home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok_impl.c
+
+1164724104 source:/home/x0129129/Desktop/DCC/dtp_gen/lib/xmltok_ns.c
+
+1276774918 source:/home/x0129129/Desktop/DCC/dtp_gen/outline.c
+	"ctypes.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+	"expat.h"
+	"tools.h"
+	"private.h"
+	<proto/expat.h>
+
+1276765524 source:/home/x0129129/Desktop/DCC/dtp_gen/tools.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276773210 source:/home/x0129129/Desktop/DCC/dtp_gen/typedef.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276585477 source:/home/x0129129/Desktop/DCC/dtp_gen/usecase.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1275389589 source:/home/x0129129/Desktop/DCC/dtp_gen/work/bbb.c
+	"../ctypes.h"
+	"bbb.h"
+
+1275484960 /home/x0129129/Desktop/DCC/dtp_gen/work/bbb.h
+	"../ctypes.h"
+
+1275555656 source:/home/x0129129/Desktop/DCC/dtp_gen/write_dtp_bin.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"write_dtp_bin.h"
+
+1275555462 /home/x0129129/Desktop/DCC/dtp_gen/write_dtp_bin.h
+
+1275490967 source:/home/x0129129/Desktop/DCC/dtp_gen/write_dtp_text.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1276765620 source:/home/x0129129/Desktop/DCC/dtp_gen/write_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1276765627 source:/home/x0129129/Desktop/DCC/dtp_gen/write_parser.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"ctypes.h"
+	"<h_file_name>
+
+1276765603 source:/home/x0129129/Desktop/DCC/dtp_gen/write_dtp.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"write_dtp.h"
+
+1276685636 /home/x0129129/Desktop/DCC/dtp_gen/write_dtp.h
+
+1164595918 /home/x0129129/Desktop/DCC/dtp_gen/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1276779004 source:/home/x0129129/Desktop/DCC/dtp_gen/src/dcc.c
+	"ctypes.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+	"expat.h"
+	"tools.h"
+	"private.h"
+	<proto/expat.h>
+
+1267201708 /home/x0129129/Desktop/DCC/dtp_gen/inc/ctypes.h
+
+1164595918 /home/x0129129/Desktop/DCC/dtp_gen/inc/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1276253926 /home/x0129129/Desktop/DCC/dtp_gen/inc/tools.h
+	"private.h"
+	"ctypes.h"
+
+1276246841 /home/x0129129/Desktop/DCC/dtp_gen/inc/private.h
+	"ctypes.h"
+	"dcc_defs.h"
+
+1275482245 /home/x0129129/Desktop/DCC/dtp_gen/inc/dcc_defs.h
+	"ctypes.h"
+
+1275489165 source:/home/x0129129/Desktop/DCC/dtp_gen/src/dcc_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276600752 source:/home/x0129129/Desktop/DCC/dtp_gen/src/general_data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1276781308 source:/home/x0129129/Desktop/DCC/dtp_gen/src/tools.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276781355 source:/home/x0129129/Desktop/DCC/dtp_gen/src/typedef.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276585477 source:/home/x0129129/Desktop/DCC/dtp_gen/src/usecase.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1276765603 source:/home/x0129129/Desktop/DCC/dtp_gen/src/write_dtp.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"write_dtp.h"
+
+1276685636 /home/x0129129/Desktop/DCC/dtp_gen/inc/write_dtp.h
+
+1276765620 source:/home/x0129129/Desktop/DCC/dtp_gen/src/write_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1276765627 source:/home/x0129129/Desktop/DCC/dtp_gen/src/write_parser.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"ctypes.h"
+	"<h_file_name>
+
+1277389652 source:/home/x0129129/Desktop/DCC/dccgen/src/dcc.c
+	"ctypes.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<conio.h>
+	"expat.h"
+	"tools.h"
+	"private.h"
+	<proto/expat.h>
+
+1267198108 /home/x0129129/Desktop/DCC/dccgen/inc/ctypes.h
+
+1164592318 /home/x0129129/Desktop/DCC/dccgen/inc/expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1277389573 /home/x0129129/Desktop/DCC/dccgen/inc/tools.h
+	"private.h"
+	"ctypes.h"
+
+1277390724 /home/x0129129/Desktop/DCC/dccgen/inc/private.h
+	"ctypes.h"
+	"dcc_defs.h"
+
+1275482246 /home/x0129129/Desktop/DCC/dccgen/inc/dcc_defs.h
+	"ctypes.h"
+
+1275489166 source:/home/x0129129/Desktop/DCC/dccgen/src/dcc_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1277389663 source:/home/x0129129/Desktop/DCC/dccgen/src/general_data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1277390448 source:/home/x0129129/Desktop/DCC/dccgen/src/tools.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1277389968 source:/home/x0129129/Desktop/DCC/dccgen/src/typedef.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+
+1276585478 source:/home/x0129129/Desktop/DCC/dccgen/src/usecase.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"expat.h"
+
+1277390670 source:/home/x0129129/Desktop/DCC/dccgen/src/write_dtp.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdarg.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"write_dtp.h"
+
+1277384630 /home/x0129129/Desktop/DCC/dccgen/inc/write_dtp.h
+
+1277302772 source:/home/x0129129/Desktop/DCC/dccgen/src/write_header.c
+	<stdio.h>
+	<string.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	<stdlib.h>
+
+1277390372 source:/home/x0129129/Desktop/DCC/dccgen/src/write_parser.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"ctypes.h"
+	"private.h"
+	"tools.h"
+	"ctypes.h"
+	"<h_file_name>
+
+1151995994 /home/x0129129/Desktop/DCC/dccgen/inc/expat_external.h
+

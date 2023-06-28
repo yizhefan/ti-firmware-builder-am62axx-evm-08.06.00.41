@@ -1,0 +1,4 @@
+TIAD_sequence0024_camera001_0000003280
+TIAD_sequence0024_camera001_0000003380
+TIAD_sequence0024_camera001_0000003414
+TIAD_sequence0024_camera001_0000003522

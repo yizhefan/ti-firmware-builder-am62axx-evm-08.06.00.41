@@ -1,0 +1,6 @@
+# Usual invokation:
+Linux:
+DCCgen_tree.pl --dir-pattern dccxml_ --root-dir /path/to/SW_root --dccgen /path/to/DCCgen.exe --debug=cmd_out
+
+windows: (just pre-ppend perl)
+perl DCCgen_tree.pl --dir-pattern dccxml_ --root-dir /path/to/SW_root --dccgen /path/to/DCCgen.exe --debug=cmd_out

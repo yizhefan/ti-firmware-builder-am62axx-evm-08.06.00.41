@@ -1,0 +1,19 @@
+Password for submission : tracking number for submission
+=======================================================
+1_1_TDA2Eco_L : 41
+1_1_TDA2Eco_R : 37
+1_1_TDA2x_L   : 38
+1_1_TDA2x_R   : 39
+1_1_TDA3x_R   : 40
+
+Any special notes about the test results,
+=========================================
+Laplacian pyramid and Laplacian reconstruct conformance tests 
+were modified since we implemented the OpenVX 1.2 version of 
+these 2 kernels.  
+Without the modifications, the tests would show fail.  
+Other modifications were simply environment/platform related changes.
+Refer included patch file for exact changes
+
+
+https://www.khronos.org/openvx/adopters/login/conformance/manage/add.cgi
