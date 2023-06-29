@@ -402,11 +402,11 @@ int itt_server_init(void * appObj, void * appFileSaveCallback, void * appDccUpda
         printf("\n %s Error : failed to register handler for command :[iss_write_sensor_reg] \n", __FUNCTION__);
     }
 
-    // err = IttCtrl_registerHandler("dev_ctrl", itt_ctrl_cmdHandlerIssDevCtrl);
-    // if (err != 0)
-    // {
-    //     printf("\n %s Error : failed to register handler for command :[dev_ctrl] \n", __FUNCTION__);
-    // }
+    err = IttCtrl_registerHandler("dev_ctrl", itt_ctrl_cmdHandlerIssDevCtrl);
+    if (err != 0)
+    {
+        printf("\n %s Error : failed to register handler for command :[dev_ctrl] \n", __FUNCTION__);
+    }
 
     err = IttCtrl_registerHandler("iss_send_dcc_file", itt_ctrl_cmdHandlerIssDccSendFile);
     if (err != 0)
