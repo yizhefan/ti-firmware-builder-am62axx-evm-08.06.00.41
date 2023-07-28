@@ -564,15 +564,15 @@ static vx_status VX_CALLBACK tivxAddKernelVpacVissValidate(vx_node node,
                     VX_PRINT(VX_ZONE_ERROR, "fcp[%d].mux_output2 must be set to TIVX_VPAC_VISS_MUX2_IR12_U16 for 12 bit IR output in 16 bit container of output%d\n", fcp, i);
                 }
 #endif
-                if (((vx_df_image)VX_DF_IMAGE_NV12 == output_fmt[i]) &&
-                    ((2 != outport) || (TIVX_VPAC_VISS_MUX2_NV12 != params.fcp[fcp].mux_output2)))
-                {
-                    status = (vx_status)VX_ERROR_INVALID_PARAMETERS;
-#if defined(VPAC3)
-                    VX_PRINT(VX_ZONE_ERROR, "params.output_fcp_mapping[%d] must be set to output2 for NV12 output of output0\n", i);
-#endif
-                    VX_PRINT(VX_ZONE_ERROR, "fcp[%d].mux_output2 must be set to TIVX_VPAC_VISS_MUX2_NV12 for NV12 output of output%d\n", fcp, i);
-                }
+//                 if (((vx_df_image)VX_DF_IMAGE_NV12 == output_fmt[i]) &&
+//                     ((2 != outport) || (TIVX_VPAC_VISS_MUX2_NV12 != params.fcp[fcp].mux_output2)))
+//                 {
+//                     status = (vx_status)VX_ERROR_INVALID_PARAMETERS;
+// #if defined(VPAC3)
+//                     VX_PRINT(VX_ZONE_ERROR, "params.output_fcp_mapping[%d] must be set to output2 for NV12 output of output0\n", i);
+// #endif
+//                     VX_PRINT(VX_ZONE_ERROR, "fcp[%d].mux_output2 must be set to TIVX_VPAC_VISS_MUX2_NV12 for NV12 output of output%d\n", fcp, i);
+//                 }
                 if ((((vx_df_image)VX_DF_IMAGE_YUYV == output_fmt[i]) || ((vx_df_image)VX_DF_IMAGE_UYVY == output_fmt[i])) &&
                     ((2 != outport) || (TIVX_VPAC_VISS_MUX2_YUV422 != params.fcp[fcp].mux_output2)))
                 {

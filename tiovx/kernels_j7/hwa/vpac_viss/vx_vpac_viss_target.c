@@ -130,6 +130,8 @@ static void vhwaVissRestoreCtx(const tivxVpacVissObj *vissObj);
 static void vhwaVissSaveCtx(const tivxVpacVissObj *vissObj);
 static void tivxVpacVissSetIsInvalidFlag(tivx_obj_desc_t *obj_desc[]);
 
+static int count = 0;
+
 int32_t tivxVpacVissFrameComplCb(Fvid2_Handle handle, void *appData);
 
 /* ========================================================================== */
@@ -283,6 +285,7 @@ static vx_status VX_CALLBACK tivxVpacVissCreate(
        tivx_obj_desc_t *obj_desc[],
        uint16_t num_params, void *priv_arg)
 {
+    count=0;
     vx_status                  status = (vx_status)VX_SUCCESS;
     int32_t                    fvid2_status = FVID2_SOK;
     uint32_t                   cnt;
@@ -880,6 +883,23 @@ static vx_status VX_CALLBACK tivxVpacVissProcess(
         }
     }
 
+    //Add by FYZ on 20230715
+    if((img_desc[0] != NULL)&&(img_desc[0]->format == VX_DF_IMAGE_NV12)&&(count<10))
+    {
+        ++count;
+        void* target_ptr;
+        target_ptr = tivxMemShared2TargetPtr(&img_desc[0]->mem_ptr[1]);
+        tivxCheckStatus(&status, tivxMemBufferMap(target_ptr,
+            img_desc[0]->mem_size[1], (vx_enum)VX_MEMORY_TYPE_HOST,
+            (vx_enum)VX_WRITE_ONLY));
+        memset(target_ptr , 0x80, img_desc[0]->width * img_desc[0]->height / 2);
+
+        tivxCheckStatus(&status, tivxMemBufferUnmap(target_ptr,
+            img_desc[0]->mem_size[1], (vx_enum)VX_MEMORY_TYPE_HOST,
+            (vx_enum)VX_WRITE_ONLY));
+    }
+    //Add by FYZ on 20230715
+
     if ( (vx_status)VX_SUCCESS == status)
     {
         tivxVpacVissSetIsInvalidFlag(obj_desc);
@@ -993,8 +1013,11 @@ static vx_status VX_CALLBACK tivxVpacVissProcess(
                 (int32_t)raw_img_desc->img_ptr[cnt].mem_heap_region);
         }
 
+        vissObj->outFrm[0].addr[0] = tivxMemShared2PhysPtr(
+            img_desc[0]->mem_ptr[0].shared_ptr,
+            (int32_t)img_desc[0]->mem_ptr[0].mem_heap_region);
         /* Set the buffer address in the output buffer */
-        for (cnt = 0u; cnt < TIVX_KERNEL_VPAC_VISS_MAX_IMAGE_OUTPUT; cnt ++)
+        for (cnt = 1u; cnt < TIVX_KERNEL_VPAC_VISS_MAX_IMAGE_OUTPUT; cnt ++)
         {
             for (buf_cnt = 0U; buf_cnt < vissObj->num_out_buf_addr[cnt];
                     buf_cnt ++)
@@ -1440,7 +1463,7 @@ static vx_status tivxVpacVissMapStorageFormat(uint32_t *ccsFmt, uint32_t vxFmt)
     {
         *ccsFmt = FVID2_CCSF_BITS12_PACKED;
     }
-    else if ((vx_df_image)VX_DF_IMAGE_U8 == vxFmt)
+    else if (((vx_df_image)VX_DF_IMAGE_U8 == vxFmt)||((vx_df_image)VX_DF_IMAGE_NV12 == vxFmt))
     {
         *ccsFmt = FVID2_CCSF_BITS8_PACKED;
     }

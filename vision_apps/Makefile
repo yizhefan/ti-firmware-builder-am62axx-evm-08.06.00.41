@@ -39,6 +39,8 @@ DIRECTORIES += utils/remote_service
 DIRECTORIES += utils/sciclient
 DIRECTORIES += utils/sciserver
 DIRECTORIES += utils/udma
+DIRECTORIES += utils/itt_server
+DIRECTORIES += utils/network_api
 
 DIRECTORIES += platform/$(SOC)
 

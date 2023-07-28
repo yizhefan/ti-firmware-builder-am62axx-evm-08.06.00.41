@@ -78,7 +78,8 @@ static vx_status tiovx_viss_module_configure_params(vx_context context, TIOVXVIS
 #if defined(SOC_AM62A)
         if(obj->params.enable_ir_op)
         {
-            if(obj->output0.color_format == VX_DF_IMAGE_U8)
+            // if(obj->output0.color_format == VX_DF_IMAGE_U8)
+            if((obj->output0.color_format == VX_DF_IMAGE_U8)||(obj->output0.color_format == VX_DF_IMAGE_NV12))
             {
                 obj->params.fcp[0].mux_output0  = TIVX_VPAC_VISS_MUX0_IR8;
                 /* If IR output is 8 bit use TIVX_VPAC_VISS_MUX0_IR8 
@@ -367,24 +368,24 @@ static vx_status tiovx_viss_module_create_outputs(vx_context context, TIOVXVISSM
             obj->output0.image_handle[buf]  = NULL;
         }
 
-        vx_image output_img = vxCreateImage(context, obj->output0.width, obj->output0.height, obj->output0.color_format);
-        status = vxGetStatus((vx_reference)output_img);
+            vx_image output_img = vxCreateImage(context, obj->output0.width, obj->output0.height, obj->output0.color_format);
+            status = vxGetStatus((vx_reference)output_img);
 
         if((vx_status)VX_SUCCESS == status)
         {
             for(buf = 0; buf < obj->output0.bufq_depth; buf++)
             {
-                obj->output0.arr[buf] = vxCreateObjectArray(context, (vx_reference)output_img, sensorObj->num_cameras_enabled);
-                status = vxGetStatus((vx_reference)obj->output0.arr[buf]);
+                    obj->output0.arr[buf] = vxCreateObjectArray(context, (vx_reference)output_img, sensorObj->num_cameras_enabled);
+                    status = vxGetStatus((vx_reference)obj->output0.arr[buf]);
 
-                if(status != VX_SUCCESS)
-                {
-                    TIOVX_MODULE_ERROR("[VISS-MODULE] Unable to create VISS output0 image array! \n");
+                    if(status != VX_SUCCESS)
+                    {
+                        TIOVX_MODULE_ERROR("[VISS-MODULE] Unable to create VISS output0 image array! \n");
+                    }
+                    obj->output0.image_handle[buf] = (vx_image)vxGetObjectArrayItem((vx_object_array)obj->output0.arr[buf], 0);
                 }
-                obj->output0.image_handle[buf] = (vx_image)vxGetObjectArrayItem((vx_object_array)obj->output0.arr[buf], 0);
-            }
 
-            vxReleaseImage(&output_img);
+                vxReleaseImage(&output_img);
         }
         else
         {
@@ -740,7 +741,7 @@ vx_status tiovx_viss_module_deinit(TIOVXVISSModuleObj *obj)
             if((vx_status)VX_SUCCESS == status)
             {
                 TIOVX_MODULE_PRINTF("[VISS-MODULE] Releasing output0 image arr!\n");
-                status = vxReleaseObjectArray(&obj->output0.arr[buf]);
+                    status = vxReleaseObjectArray(&obj->output0.arr[buf]);
             }
         }
     }

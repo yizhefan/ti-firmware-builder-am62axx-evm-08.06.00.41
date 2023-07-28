@@ -192,7 +192,7 @@ void itt_ctrl_cmdHandlerIssWriteSensorReg(char *cmd, uint32_t prmSize);
  * 
  * Executes the script and sends the results (PASS/FAIL) to ITT Client (on PC) 
  */
-void itt_ctrl_cmdHandlerIssDevCtrl(char *cmd, uint32_t prmSize);
+// void itt_ctrl_cmdHandlerIssDevCtrl(char *cmd, uint32_t prmSize);
 
 #ifdef ENABLE_EDGEAI
 

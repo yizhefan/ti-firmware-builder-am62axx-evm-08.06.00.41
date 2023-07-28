@@ -177,22 +177,29 @@ int TI_AE_do(                                // return 1: AE change; 0: no chang
             if (weight != NULL)
             {
                 // 1024 * 64 * 64 * 128 = 2**29
-                rsum += (int32_t)h3a_data[i * width + j].red   * weight[i * width + j];
-                gsum += (int32_t)h3a_data[i * width + j].green * weight[i * width + j];
+                // rsum += (int32_t)h3a_data[i * width + j].red   * weight[i * width + j];
+                rsum += (int32_t)h3a_data[i * width + j].blue   * weight[i * width + j];
+                // gsum += (int32_t)h3a_data[i * width + j].green * weight[i * width + j];
+                gsum += (int32_t)h3a_data[i * width + j].blue * weight[i * width + j];
                 bsum += (int32_t)h3a_data[i * width + j].blue  * weight[i * width + j];
                 // 64 * 64 * 128 = 2**19
                 wsum += weight[i * width + j];
             }
             else
             {
-                rsum += (int32_t) h3a_data[i * width + j].red;
-                gsum += (int32_t) h3a_data[i * width + j].green;
+                // rsum += (int32_t) h3a_data[i * width + j].red;
+                // gsum += (int32_t) h3a_data[i * width + j].green;
+                rsum += (int32_t) h3a_data[i * width + j].blue;
+                gsum += (int32_t) h3a_data[i * width + j].blue;
                 bsum += (int32_t) h3a_data[i * width + j].blue;
                 wsum += 1;
             }
 
-            int32_t y = (h3a_data[i * width + j].red   * rY
-                       + h3a_data[i * width + j].green * gY
+            // int32_t y = (h3a_data[i * width + j].red   * rY
+            //            + h3a_data[i * width + j].green * gY
+            //            + h3a_data[i * width + j].blue  * bY + 128) >> 8;
+            int32_t y = (h3a_data[i * width + j].blue   * rY
+                       + h3a_data[i * width + j].blue * gY
                        + h3a_data[i * width + j].blue  * bY + 128) >> 8;
 
             for (jj = 0; jj < 6; jj++)
@@ -279,10 +286,10 @@ int TI_AE_do(                                // return 1: AE change; 0: no chang
     }
     h->avg_y = max2_ae(h->avg_y, 1);
 
-    int32_t avgY    = h->avg_y;
-    int32_t tgtY    = h->exposure_program.target_brightness;
-    int32_t tgtYmin = h->exposure_program.target_brightness_range.min;
-    int32_t tgtYmax = h->exposure_program.target_brightness_range.max;
+    // int32_t avgY    = h->avg_y;
+    // int32_t tgtY    = h->exposure_program.target_brightness;
+    // int32_t tgtYmin = h->exposure_program.target_brightness_range.min;
+    // int32_t tgtYmax = h->exposure_program.target_brightness_range.max;
 
 #ifdef AE_DEBUG
     printf("AE debug: curY=%d, avgY=%d, locked=%d, lockcnt=%d\n", curY, avgY/h->num_history, h->locked, h->lock_cnt);
@@ -290,30 +297,30 @@ int TI_AE_do(                                // return 1: AE change; 0: no chang
 
     if (!reset)
     {
-        if (abs1(avgY - tgtY * h->num_history) < h->lock_thrld * h->num_history && h->locked)
-        {
-            return 1;
-        }
-        if ( ((curY > tgtYmin) && (curY < tgtYmax))
-          || ((avgY > tgtYmin * h->num_history) && (avgY < tgtYmax * h->num_history)) )
-        {
-            h->lock_cnt++;
-        }
-        else if (h->lock_cnt > 0)
-        {
-            h->lock_cnt--;
-        }
+        // if (abs1(avgY - tgtY * h->num_history) < h->lock_thrld * h->num_history && h->locked)
+        // {
+        //     return 1;
+        // }
+        // if ( ((curY > tgtYmin) && (curY < tgtYmax))
+        //   || ((avgY > tgtYmin * h->num_history) && (avgY < tgtYmax * h->num_history)) )
+        // {
+        //     h->lock_cnt++;
+        // }
+        // else if (h->lock_cnt > 0)
+        // {
+        //     h->lock_cnt--;
+        // }
 
-        if (h->lock_cnt >= 3)
-        {
-            h->lock_cnt = 3;
-            h->locked = 1;
-            return 1;
-        }
-        else if (h->lock_cnt > 0 && h->locked)
-        {
-            return 1;
-        }
+        // if (h->lock_cnt >= 3)
+        // {
+        //     h->lock_cnt = 3;
+        //     h->locked = 1;
+        //     return 1;
+        // }
+        // else if (h->lock_cnt > 0 && h->locked)
+        // {
+        //     return 1;
+        // }
     }
 
     h->locked = 0;
@@ -444,7 +451,7 @@ static void TIAE_adj_exposure(
 {
     if (currentY < 1) currentY = 1;
     int32_t adjRatio = exp_prog->target_brightness * 1024 / currentY;
-    int32_t delta = 1024/10;
+    int32_t delta = 1024/20;
     if (adjRatio > 4096)
     {
         adjRatio = 4096;
@@ -471,11 +478,19 @@ static void TIAE_adj_exposure(
     }
     else if (adjRatio > 1024 + delta)
     {
-        adjRatio = 1024 + delta;
+        adjRatio = 1024 + 2 * delta;
     }
     else if (adjRatio < 1024 - delta)
     {
-        adjRatio = 1024 - delta;
+        adjRatio = 1024 - 2 * delta;
+    }
+    else if (adjRatio > 1024)
+    {
+        adjRatio = 1024;
+    }
+    else if (adjRatio < 1024)
+    {
+        adjRatio = 1024;
     }
 
     /* Use the range values to calculate the actual adjustment needed */
